@@ -1,0 +1,14 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "A basic Discord Bot with minimal Dockerfile for deployment to a VM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Paul Renshaw <paul@renshaw.digital>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
