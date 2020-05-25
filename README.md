@@ -52,13 +52,13 @@ You can either clone this repo if starting from scratch, or use an existing one 
 After updating your code and checking that it runs locally. You can run the following commands to update your Container Image and live Compute Engine instance.
 
 1. Updating Container Image (simply run the same cloud build command as before)
-```
-gcloud builds submit --tag gcr.io/[your-project-id]/[your-image-id]
-```
+    ```
+    gcloud builds submit --tag gcr.io/[your-project-id]/[your-image-id]
+    ```
 
 1. Updating Compute Engine
-```
-gcloud compute instances update-container [your-instance-name] --zone [your-instance-zone] --container-image=gcr.io/[your-project-id]/[your-image-id]
-```
+    ```
+    gcloud compute instances update-container [your-instance-name] --zone [your-instance-zone] --container-image=gcr.io/[your-project-id]/[your-image-id]
+    ```
 
 If you have any issues or further questions feel free to contact me on the Devcord or Domaincord discord servers (ask for Paul R or look for the avatar of me wearing a red cap with GEEK written on the front).
