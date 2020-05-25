@@ -47,4 +47,18 @@ You can either clone this repo if starting from scratch, or use an existing one 
 1. Scroll to the bottom and click 'Create'
 1. You will be directed back to the dashboard and once your instance starts, your bot should log in and you should see it in your discord server.
 
+### Updating
+
+After updating your code and checking that it runs locally. You can run the following commands to update your Container Image and live Compute Engine instance.
+
+1. Updating Container Image (simply run the same cloud build command as before)
+```
+gcloud builds submit --tag gcr.io/[your-project-id]/[your-image-id]
+```
+
+1. Updating Compute Engine
+```
+gcloud compute instances update-container [your-instance-name] --zone [your-instance-zone] --container-image=gcr.io/[your-project-id]/[your-image-id]
+```
+
 If you have any issues or further questions feel free to contact me on the Devcord or Domaincord discord servers (ask for Paul R or look for the avatar of me wearing a red cap with GEEK written on the front).
