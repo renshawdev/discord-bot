@@ -9,6 +9,6 @@
   "author": "Paul Renshaw <paul@renshaw.digital>",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.2.0"
+    "discord.js": "^12.5.1"
   }
 }
